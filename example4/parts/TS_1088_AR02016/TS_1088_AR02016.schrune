@@ -1,0 +1,15 @@
+part TS_1088_AR02016 {
+    info: {
+        partNumber: "TS-1088-AR02016",
+        manufacture: "XUNPU(讯普)",
+        footprint: "./TS_1088_AR02016.kicad_mod",
+        symbol: "./TS_1088_AR02016.kicad_sym",
+        LCSC: "C720477",
+        designatorPrefix: "SW",
+    }
+
+    pins: [
+        1:1,
+        2:2,
+    ]
+}

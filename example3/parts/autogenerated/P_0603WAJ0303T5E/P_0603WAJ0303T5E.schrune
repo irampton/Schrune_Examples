@@ -1,0 +1,15 @@
+part P_0603WAJ0303T5E {
+    info: {
+        partNumber: "0603WAJ0303T5E",
+        manufacture: "UNI-ROYAL(厚声)",
+        footprint: "./P_0603WAJ0303T5E.kicad_mod",
+        symbol: "./P_0603WAJ0303T5E.kicad_sym",
+        LCSC: "C18681",
+        designatorPrefix: "R",
+    }
+
+    pins: [
+        1:1,
+        2:2,
+    ]
+}

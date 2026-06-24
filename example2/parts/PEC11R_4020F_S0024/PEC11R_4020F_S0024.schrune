@@ -1,0 +1,20 @@
+part PEC11R_4020F_S0024 {
+    info: {
+        partNumber: "PEC11R-4020F-S0024",
+        manufacture: "BOURNS",
+        footprint: "./PEC11R_4020F_S0024.kicad_mod",
+        symbol: "./PEC11R_4020F_S0024.kicad_sym",
+        LCSC: "C143788",
+        designatorPrefix: "SW",
+    }
+
+    pins: [
+        A:1,
+        C:2,
+        B:3,
+        4:4,
+        5:5,
+        7:7,
+        8:8,
+    ]
+}

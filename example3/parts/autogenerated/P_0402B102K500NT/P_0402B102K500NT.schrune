@@ -1,0 +1,15 @@
+part P_0402B102K500NT {
+    info: {
+        partNumber: "0402B102K500NT",
+        manufacture: "FH(风华)",
+        footprint: "./P_0402B102K500NT.kicad_mod",
+        symbol: "./P_0402B102K500NT.kicad_sym",
+        LCSC: "C1523",
+        designatorPrefix: "C",
+    }
+
+    pins: [
+        1:1,
+        2:2,
+    ]
+}

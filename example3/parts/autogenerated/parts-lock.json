@@ -1,0 +1,237 @@
+{
+  "version": 1,
+  "parts": [
+    {
+      "lcsc": "C1523",
+      "partName": "P_0402B102K500NT"
+    },
+    {
+      "lcsc": "C1524",
+      "partName": "P_0402B103K500NT",
+      "manufacturer": "FH (Guangdong Fenghua Advanced Tech)",
+      "mpn": "0402B103K500NT",
+      "package": "0402",
+      "description": "10nF 50V X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+      "datasheetUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_FH--Guangdong-Fenghua-Advanced-Tech-0402B103K500NT_C1524.pdf",
+      "stock": 270271,
+      "unitCost": 0.0033,
+      "isBasic": false,
+      "isPreferred": false
+    },
+    {
+      "lcsc": "C1525",
+      "partName": "CL05B104KO5NNNC",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "mpn": "CL05B104KO5NNNC",
+      "package": "0402",
+      "description": "100nF 16V X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+      "datasheetUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf",
+      "stock": 16210540,
+      "unitCost": 0.006,
+      "isBasic": true,
+      "isPreferred": false
+    },
+    {
+      "lcsc": "C1567",
+      "partName": "P_0402CG470J500NT"
+    },
+    {
+      "lcsc": "C1691",
+      "partName": "CL10A106MQ8NNNC",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "mpn": "CL10A106MQ8NNNC",
+      "package": "0603",
+      "description": "10uF 6.3V X5R ±20% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+      "datasheetUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10A106MQ8NNNC_C1691.pdf",
+      "stock": 176517,
+      "unitCost": 0.0258,
+      "isBasic": false,
+      "isPreferred": false
+    },
+    {
+      "lcsc": "C1934",
+      "partName": "CL31A226MOHNNNE",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "mpn": "CL31A226MOHNNNE",
+      "package": "1206",
+      "description": "16V 22uF X5R ±20% 1206 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+      "datasheetUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL31A226MOHNNNE_C1934.pdf",
+      "stock": 86,
+      "unitCost": 0.0671,
+      "isBasic": false,
+      "isPreferred": false
+    },
+    {
+      "lcsc": "C8678",
+      "partName": "SS34"
+    },
+    {
+      "lcsc": "C11857",
+      "partName": "RTT02683JTH",
+      "manufacturer": "RALEC",
+      "mpn": "RTT02683JTH",
+      "package": "0402",
+      "description": "-55℃~+155℃ 50V 62.5mW 68kΩ Thick Film Resistor ±100ppm/℃ ±5% 0402 Chip Resistor - Surface Mount ROHS",
+      "datasheetUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_RALEC-RTT02683JTH_C11857.pdf",
+      "stock": 7730,
+      "unitCost": 0.0006,
+      "isBasic": false,
+      "isPreferred": false
+    },
+    {
+      "lcsc": "C11887",
+      "partName": "RTT02334JTH",
+      "manufacturer": "RALEC",
+      "mpn": "RTT02334JTH",
+      "package": "0402",
+      "description": "-55℃~+155℃ 330kΩ 50V 62.5mW Thick Film Resistor ±100ppm/℃ ±5% 0402 Chip Resistor - Surface Mount ROHS",
+      "datasheetUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_RALEC-RTT02334JTH_C11887.pdf",
+      "stock": 7454,
+      "unitCost": 0.0005,
+      "isBasic": false,
+      "isPreferred": false
+    },
+    {
+      "lcsc": "C18681",
+      "partName": "P_0603WAJ0303T5E",
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "mpn": "0603WAJ0303T5E",
+      "package": "0603",
+      "description": "-55℃~+155℃ 100mW 30kΩ 75V Thick Film Resistor ±100ppm/℃ ±5% 0603 Chip Resistor - Surface Mount ROHS",
+      "datasheetUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010145_UNI-ROYAL-Uniroyal-Elec-0603WAJ0303T5E_C18681.pdf",
+      "stock": 45,
+      "unitCost": 0.0016,
+      "isBasic": false,
+      "isPreferred": false
+    },
+    {
+      "lcsc": "C26082",
+      "partName": "P_0402WGF1005TCE",
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "mpn": "0402WGF1005TCE",
+      "package": "0402",
+      "description": "-55℃~+155℃ 10MΩ 50V 62.5mW Thick Film Resistor ±1% ±200ppm/℃ 0402 Chip Resistor - Surface Mount ROHS",
+      "datasheetUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1005TCE_C26082.pdf",
+      "stock": 27,
+      "unitCost": 0.0008,
+      "isBasic": false,
+      "isPreferred": false
+    },
+    {
+      "lcsc": "C29823",
+      "partName": "P_1206B475K500NT"
+    },
+    {
+      "lcsc": "C68361",
+      "partName": "CL31A476MQHNNNE",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "mpn": "CL31A476MQHNNNE",
+      "package": "1206",
+      "description": "47uF 6.3V X5R ±20% 1206 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+      "datasheetUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_1810221121_Samsung-Electro-Mechanics-CL31A476MQHNNNE_C68361.pdf",
+      "stock": 19008,
+      "unitCost": 0.1014,
+      "isBasic": false,
+      "isPreferred": false
+    },
+    {
+      "lcsc": "C177269",
+      "partName": "RCT034R7JLF",
+      "manufacturer": "HKR(Hong Kong Resistors)",
+      "mpn": "RCT034R7JLF",
+      "package": "0603",
+      "description": "-55℃~+155℃ 100mW 4.7Ω 75V Thick Film Resistor ±200ppm/℃ ±5% 0603 Chip Resistor - Surface Mount ROHS",
+      "datasheetUrl": "https://datasheet.lcsc.com/lcsc/2304140030_HKR-Hong-Kong-Resistors-RCT034R7JLF_C177269.pdf",
+      "stock": 32,
+      "unitCost": 0.0013,
+      "isBasic": false,
+      "isPreferred": false
+    },
+    {
+      "lcsc": "C22463822",
+      "partName": "SL0630_6R8M"
+    }
+  ],
+  "selectors": {
+    "C1": "C1525",
+    "C2": "C1524",
+    "C3": "C1524",
+    "C4": "C1691",
+    "C5": "C1523",
+    "C6": "C1934",
+    "C7": "C29823",
+    "C8": "C29823",
+    "C9": "C1567",
+    "C10": "C68361",
+    "C11": "C68361",
+    "D1": "C8678",
+    "L1": "C22463822",
+    "R1": "C18681",
+    "R2": "C11887",
+    "R3": "C11857",
+    "R4": "C26082",
+    "R5": "C177269"
+  },
+  "selectionCache": {
+    "{\"type\":\"Capacitor\",\"value\":\"100nF +/- 10%\",\"footprint\":\"0402\",\"voltage\":null,\"power\":null,\"tolerance\":null}": {
+      "lcsc": "C1525",
+      "partName": "CL05B104KO5NNNC"
+    },
+    "{\"type\":\"Capacitor\",\"value\":\"10nF +/- 10%\",\"footprint\":\"0402\",\"voltage\":null,\"power\":null,\"tolerance\":null}": {
+      "lcsc": "C1524",
+      "partName": "P_0402B103K500NT"
+    },
+    "{\"type\":\"Capacitor\",\"value\":\"10uF +/- 20%\",\"footprint\":null,\"voltage\":null,\"power\":null,\"tolerance\":null}": {
+      "lcsc": "C1691",
+      "partName": "CL10A106MQ8NNNC"
+    },
+    "{\"type\":\"Capacitor\",\"value\":\"1nF +/- 10%\",\"footprint\":\"0402\",\"voltage\":null,\"power\":null,\"tolerance\":null}": {
+      "lcsc": "C1523",
+      "partName": "P_0402B102K500NT"
+    },
+    "{\"type\":\"Capacitor\",\"value\":\"22uF +/- 20%\",\"footprint\":null,\"voltage\":null,\"power\":null,\"tolerance\":null}": {
+      "lcsc": "C1934",
+      "partName": "CL31A226MOHNNNE"
+    },
+    "{\"type\":\"Capacitor\",\"value\":\"4.7uF +/- 20%\",\"footprint\":\"1206\",\"voltage\":null,\"power\":null,\"tolerance\":null}": {
+      "lcsc": "C29823",
+      "partName": "P_1206B475K500NT"
+    },
+    "{\"type\":\"Capacitor\",\"value\":\"47pF +/- 5%\",\"footprint\":\"0402\",\"voltage\":null,\"power\":null,\"tolerance\":null}": {
+      "lcsc": "C1567",
+      "partName": "P_0402CG470J500NT"
+    },
+    "{\"type\":\"Capacitor\",\"value\":\"47uF +/- 20%\",\"footprint\":\"1206\",\"voltage\":null,\"power\":null,\"tolerance\":null}": {
+      "lcsc": "C68361",
+      "partName": "CL31A476MQHNNNE"
+    },
+    "{\"type\":\"Diode\",\"value\":null,\"footprint\":null,\"voltage\":null,\"power\":null,\"tolerance\":null}": {
+      "lcsc": "C8678",
+      "partName": "SS34"
+    },
+    "{\"type\":\"Inductor\",\"value\":null,\"footprint\":null,\"voltage\":null,\"power\":null,\"tolerance\":null}": {
+      "lcsc": "C22463822",
+      "partName": "SL0630_6R8M"
+    },
+    "{\"type\":\"Resistor\",\"value\":\"30kohm +/- 1%\",\"footprint\":\"0603\",\"voltage\":null,\"power\":null,\"tolerance\":null}": {
+      "lcsc": "C18681",
+      "partName": "P_0603WAJ0303T5E"
+    },
+    "{\"type\":\"Resistor\",\"value\":\"330kohm +/- 1%\",\"footprint\":\"0402\",\"voltage\":null,\"power\":null,\"tolerance\":null}": {
+      "lcsc": "C11887",
+      "partName": "RTT02334JTH"
+    },
+    "{\"type\":\"Resistor\",\"value\":\"68kohm +/- 1%\",\"footprint\":\"0402\",\"voltage\":null,\"power\":null,\"tolerance\":null}": {
+      "lcsc": "C11857",
+      "partName": "RTT02683JTH"
+    },
+    "{\"type\":\"Resistor\",\"value\":{\"number\":10000,\"unit\":\"kOhm\"},\"footprint\":\"0402\",\"voltage\":null,\"power\":null,\"tolerance\":\"1%\"}": {
+      "lcsc": "C26082",
+      "partName": "P_0402WGF1005TCE"
+    },
+    "{\"type\":\"Resistor\",\"value\":1904.7619047619046,\"footprint\":\"0603\",\"voltage\":null,\"power\":null,\"tolerance\":\"1%\"}": {
+      "lcsc": "C177269",
+      "partName": "RCT034R7JLF"
+    }
+  }
+}

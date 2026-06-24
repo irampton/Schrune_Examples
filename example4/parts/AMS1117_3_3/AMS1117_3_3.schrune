@@ -1,0 +1,17 @@
+part AMS1117_3_3 {
+    info: {
+        partNumber: "AMS1117-3.3",
+        manufacture: "Advanced Monolithic Systems",
+        footprint: "./AMS1117_3_3.kicad_mod",
+        symbol: "./AMS1117_3_3.kicad_sym",
+        LCSC: "C6186",
+        designatorPrefix: "U",
+    }
+
+    pins: [
+        GND:1,
+        VOUT:2,
+        VIN:3,
+        VOUT_4:4,
+    ]
+}

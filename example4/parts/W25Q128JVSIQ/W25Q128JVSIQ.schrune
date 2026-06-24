@@ -1,0 +1,21 @@
+part W25Q128JVSIQ {
+    info: {
+        partNumber: "W25Q128JVSIQ",
+        manufacture: "Winbond(华邦)",
+        footprint: "./W25Q128JVSIQ.kicad_mod",
+        symbol: "./W25Q128JVSIQ.kicad_sym",
+        LCSC: "C97521",
+        designatorPrefix: "U",
+    }
+
+    pins: [
+        CS:1,
+        DO:2,
+        IO2:3,
+        GND:4,
+        DI:5,
+        CLK:6,
+        IO3:7,
+        VCC:8,
+    ]
+}

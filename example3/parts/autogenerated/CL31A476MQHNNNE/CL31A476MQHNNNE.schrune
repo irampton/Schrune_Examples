@@ -1,0 +1,15 @@
+part CL31A476MQHNNNE {
+    info: {
+        partNumber: "CL31A476MQHNNNE",
+        manufacture: "SAMSUNG(三星)",
+        footprint: "./CL31A476MQHNNNE.kicad_mod",
+        symbol: "./CL31A476MQHNNNE.kicad_sym",
+        LCSC: "C68361",
+        designatorPrefix: "C",
+    }
+
+    pins: [
+        1:1,
+        2:2,
+    ]
+}

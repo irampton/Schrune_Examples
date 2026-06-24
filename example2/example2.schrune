@@ -1,0 +1,72 @@
+#include "P_2_54_2_3P.schrune"
+#include "PEC11R_4020F_S0024.schrune"
+#include "SN74HC165N.schrune"
+
+module top () {
+    rail power_3v3;
+    power_3v3.voltage = 3.3V +/- 5%
+
+    net threeV;
+    net gnd;
+    net cs;
+    net tx;
+    net rx;
+    net clock;
+    threeV.name = "3V3";
+    gnd.name = "GND";
+    cs.name = "BTN1";
+    tx.name = "LATCH";
+    rx.name = "DATA";
+    clock.name = "CLOCK";
+
+    power_3v3.h ~ threeV;
+    power_3v3.l ~ gnd;
+
+    input = new P_2_54_2_3P();
+    input[1] ~ gnd;
+    input[2] ~ cs;	// CS
+    input[3] ~ tx; 	// TX/MOSI
+    input[4] ~ clock; 	// Clock
+    input[5] ~ threeV;
+    input[6] ~ rx; 	// RX/MISO
+
+    part shift_register = new SN74HC165N();
+    shift_register.VCC ~ threeV;
+    shift_register.GND ~ gnd;
+    shift_register.CLK ~ clock;
+    shift_register.SH_nLD ~ tx;
+    shift_register.QH ~ rx;
+    shift_register.CLK_INH ~ gnd;
+    shift_register.SER ~ gnd;
+
+    shift_register_decoupling = new Capacitor(
+						value = 100nF +/- 10%,
+						footprint = "0402"
+					 	);
+    threeV ~> shift_register_decoupling ~> gnd;
+
+    // The Encoders
+    part[3] encoders = new PEC11R_4020F_S0024();
+    part[9] pullupResistors = new Resistor(value="10kohm +/- 5%", footprint="1206")
+
+    for (let i = 0; i < encoders.length; i++){
+	encoders[i].A ~ shift_register.inputs[i * 3 + 0];
+	encoders[i].B ~ shift_register.inputs[i * 3 + 1];
+	if(i <= 2) {
+	    encoders[i].4 ~ shift_register.inputs[i * 3 + 2];
+	} else {
+	    encoders[i].4 ~ cs;
+	}
+
+	// Common ground
+    	encoders[i].C ~ gnd;
+	encoders[i].5 ~ gnd;
+	encoders[i].7 ~ gnd;
+	encoders[i].8 ~ gnd;
+    }
+
+    for (let i = 0; i < 8;  i++){
+    	threeV ~> pullupResistors[i] ~> shift_register.inputs[i];
+    }
+    threeV ~> pullupResistors[8] ~> cs;
+}

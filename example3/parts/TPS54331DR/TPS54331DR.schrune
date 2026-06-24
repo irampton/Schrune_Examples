@@ -1,0 +1,21 @@
+part TPS54331DR {
+    info: {
+        partNumber: "TPS54331DR",
+        manufacture: "TI(德州仪器)",
+        footprint: "./TPS54331DR.kicad_mod",
+        symbol: "./TPS54331DR.kicad_sym",
+        LCSC: "C9865",
+        designatorPrefix: "U",
+    }
+
+    pins: [
+        BOOT:1,
+        VIN:2,
+        EN:3,
+        SS:4,
+        VSENSE:5,
+        COMP:6,
+        GND:7,
+        PH:8,
+    ]
+}

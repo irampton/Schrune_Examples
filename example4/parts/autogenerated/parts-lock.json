@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "parts": [
+    {
+      "lcsc": "C1554",
+      "partName": "P_0402CG200J500NT",
+      "manufacturer": "FH (Guangdong Fenghua Advanced Tech)",
+      "mpn": "0402CG200J500NT",
+      "package": "0402",
+      "description": "20pF 50V C0G ±5% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+      "datasheetUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_FH--Guangdong-Fenghua-Advanced-Tech-0402CG200J500NT_C1554.pdf",
+      "stock": 460054,
+      "unitCost": 0.0033,
+      "isBasic": true,
+      "isPreferred": false
+    },
+    {
+      "lcsc": "C1691",
+      "partName": "CL10A106MQ8NNNC",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "mpn": "CL10A106MQ8NNNC",
+      "package": "0603",
+      "description": "10uF 6.3V X5R ±20% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+      "datasheetUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10A106MQ8NNNC_C1691.pdf",
+      "stock": 176537,
+      "unitCost": 0.0258,
+      "isBasic": false,
+      "isPreferred": false
+    },
+    {
+      "lcsc": "C1934",
+      "partName": "CL31A226MOHNNNE",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "mpn": "CL31A226MOHNNNE",
+      "package": "1206",
+      "description": "16V 22uF X5R ±20% 1206 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+      "datasheetUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL31A226MOHNNNE_C1934.pdf",
+      "stock": 86,
+      "unitCost": 0.0671,
+      "isBasic": false,
+      "isPreferred": false
+    },
+    {
+      "lcsc": "C8330",
+      "partName": "P_43K_4302_5_0402",
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "mpn": "43K(4302) ±5% 0402",
+      "package": "0402",
+      "description": "0402 Chip Resistor - Surface Mount ROHS",
+      "stock": 8740,
+      "unitCost": 0.0004,
+      "isBasic": false,
+      "isPreferred": false
+    },
+    {
+      "lcsc": "C14445",
+      "partName": "CL05A105KP5NNNC",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "mpn": "CL05A105KP5NNNC",
+      "package": "0402",
+      "description": "10V 1uF X5R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+      "datasheetUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05A105KP5NNNC_C14445.pdf",
+      "stock": 348402,
+      "unitCost": 0.0047,
+      "isBasic": false,
+      "isPreferred": false
+    },
+    {
+      "lcsc": "C23345",
+      "partName": "P_0603WAF220JT5E",
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "mpn": "0603WAF220JT5E",
+      "package": "0603",
+      "description": "-55℃~+155℃ 100mW 22Ω 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS",
+      "datasheetUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010100_UNI-ROYAL-Uniroyal-Elec-0603WAF220JT5E_C23345.pdf",
+      "stock": 2670728,
+      "unitCost": 0.0017,
+      "isBasic": true,
+      "isPreferred": false
+    }
+  ],
+  "selectors": {
+    "C1": "C1691",
+    "C2": "C14445",
+    "C3": "C14445",
+    "C4": "C14445",
+    "C5": "C14445",
+    "C6": "C14445",
+    "C7": "C14445",
+    "C8": "C14445",
+    "C9": "C14445",
+    "C10": "C14445",
+    "C11": "C14445",
+    "C12": "C1554",
+    "C13": "C1554",
+    "C14": "C1934",
+    "R1": "C8330",
+    "R2": "C8330",
+    "R3": "C8330",
+    "R4": "C8330",
+    "R5": "C23345",
+    "R6": "C23345",
+    "R7": "C8330",
+    "R8": "C8330"
+  },
+  "selectionCache": {
+    "{\"type\":\"Capacitor\",\"value\":\"10uF +/- 20%\",\"footprint\":null,\"voltage\":null,\"power\":null,\"tolerance\":null}": {
+      "lcsc": "C1691",
+      "partName": "CL10A106MQ8NNNC"
+    },
+    "{\"type\":\"Capacitor\",\"value\":\"1uF +/- 20%\",\"footprint\":\"0402\",\"voltage\":null,\"power\":null,\"tolerance\":null}": {
+      "lcsc": "C14445",
+      "partName": "CL05A105KP5NNNC"
+    },
+    "{\"type\":\"Capacitor\",\"value\":\"20pF +/- 20%\",\"footprint\":\"0402\",\"voltage\":null,\"power\":null,\"tolerance\":null}": {
+      "lcsc": "C1554",
+      "partName": "P_0402CG200J500NT"
+    },
+    "{\"type\":\"Capacitor\",\"value\":\"22uF +/- 20%\",\"footprint\":null,\"voltage\":null,\"power\":null,\"tolerance\":null}": {
+      "lcsc": "C1934",
+      "partName": "CL31A226MOHNNNE"
+    },
+    "{\"type\":\"Resistor\",\"value\":\"10kohms +/- 5%\",\"footprint\":\"0402\",\"voltage\":null,\"power\":null,\"tolerance\":null}": {
+      "lcsc": "C8330",
+      "partName": "P_43K_4302_5_0402"
+    },
+    "{\"type\":\"Resistor\",\"value\":\"22Ohm +/- 5%\",\"footprint\":\"0603\",\"voltage\":null,\"power\":null,\"tolerance\":null}": {
+      "lcsc": "C23345",
+      "partName": "P_0603WAF220JT5E"
+    },
+    "{\"type\":\"Resistor\",\"value\":\"5.1kohms +/- 5%\",\"footprint\":\"0402\",\"voltage\":null,\"power\":null,\"tolerance\":null}": {
+      "lcsc": "C8330",
+      "partName": "P_43K_4302_5_0402"
+    }
+  }
+}

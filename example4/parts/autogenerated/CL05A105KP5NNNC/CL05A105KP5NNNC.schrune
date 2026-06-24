@@ -1,0 +1,15 @@
+part CL05A105KP5NNNC {
+    info: {
+        partNumber: "CL05A105KP5NNNC",
+        manufacture: "SAMSUNG(三星)",
+        footprint: "./CL05A105KP5NNNC.kicad_mod",
+        symbol: "./CL05A105KP5NNNC.kicad_sym",
+        LCSC: "C14445",
+        designatorPrefix: "C",
+    }
+
+    pins: [
+        1:1,
+        2:2,
+    ]
+}

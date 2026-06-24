@@ -1,0 +1,15 @@
+part P_43K_4302_5_0402 {
+    info: {
+        partNumber: "43K(4302) ±5% 0402",
+        manufacture: "LCSC",
+        footprint: "./P_43K_4302_5_0402.kicad_mod",
+        symbol: "./P_43K_4302_5_0402.kicad_sym",
+        LCSC: "C8330",
+        designatorPrefix: "R",
+    }
+
+    pins: [
+        1:1,
+        2:2,
+    ]
+}

@@ -1,0 +1,15 @@
+part P_0402CG200J500NT {
+    info: {
+        partNumber: "0402CG200J500NT",
+        manufacture: "FH(风华)",
+        footprint: "./P_0402CG200J500NT.kicad_mod",
+        symbol: "./P_0402CG200J500NT.kicad_sym",
+        LCSC: "C1554",
+        designatorPrefix: "C",
+    }
+
+    pins: [
+        1:1,
+        2:2,
+    ]
+}

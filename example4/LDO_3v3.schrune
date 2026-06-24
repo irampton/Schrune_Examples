@@ -1,0 +1,20 @@
+#include "AMS1117_3_3.schrune"
+
+module LDO_3v3(){
+    rail power_in;
+    rail power_out;
+
+    power_in.voltage = 4v-12v;
+    power_in.l ~ power_out.l;
+    
+    part ldo = new AMS1117_3_3();
+    power_in.h ~ ldo.VIN;
+    power_out.h ~ ldo.VOUT;
+    power_out.l ~ ldo.GND;
+
+    cin = new Capacitor(value="10uF +/- 20%");
+    power_in.h ~> cin ~> power_out.l;
+
+    cout = new Capacitor(value="22uF +/- 20%");
+    power_out.h ~> cout ~> power_out.l;
+}

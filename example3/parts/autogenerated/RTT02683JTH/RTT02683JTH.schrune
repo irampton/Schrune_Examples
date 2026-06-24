@@ -1,0 +1,15 @@
+part RTT02683JTH {
+    info: {
+        partNumber: "RTT02683JTH",
+        manufacture: "RALEC(旺诠)",
+        footprint: "./RTT02683JTH.kicad_mod",
+        symbol: "./RTT02683JTH.kicad_sym",
+        LCSC: "C11857",
+        designatorPrefix: "R",
+    }
+
+    pins: [
+        1:1,
+        2:2,
+    ]
+}

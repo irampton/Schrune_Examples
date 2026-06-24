@@ -1,0 +1,15 @@
+part SL0630_6R8M {
+    info: {
+        partNumber: "SL0630-6R8M",
+        manufacture: "台湾陆海",
+        footprint: "./SL0630_6R8M.kicad_mod",
+        symbol: "./SL0630_6R8M.kicad_sym",
+        LCSC: "C22463822",
+        designatorPrefix: "L",
+    }
+
+    pins: [
+        1:1,
+        2:2,
+    ]
+}

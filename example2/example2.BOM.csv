@@ -1,0 +1,6 @@
+Designator,Quantity,Manufacturer,Manufacturer Part Number,LCSC,Value,Footprint,Type,Description,Stock,Unit Cost,Basic,Preferred
+C1,1,Samsung Electro-Mechanics,CL05B104KO5NNNC,C1525,100nF +/- 10%,0402,Capacitor,100nF 16V X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS,13061666,0.0031,true,false
+J1,1,BOOMELE(博穆精密),2.54-2*3P针,C65114,,./P_2_54_2_3P.kicad_mod,P_2_54_2_3P,,,,,
+R2 R3 R4 R5 R6 R7 R8 R9 R1,9,UNI-ROYAL(Uniroyal Elec),1206W4F1002T5E,C17902,10kohm +/- 5%,1206,Resistor,-55℃~+155℃ 10kΩ 200V 250mW Thick Film Resistor ±1% ±100ppm/℃ 1206 Chip Resistor - Surface Mount ROHS,1093553,0.0058,true,false
+SW2 SW3 SW1,3,BOURNS,PEC11R-4020F-S0024,C143788,,./PEC11R_4020F_S0024.kicad_mod,PEC11R_4020F_S0024,,,,,
+U1,1,TI(德州仪器),SN74HC165N,C2909,,./SN74HC165N.kicad_mod,SN74HC165N,,,,,

@@ -1,0 +1,60 @@
+// This example showcases basic modules by implmenting a DC-DC buck converter and LDO
+
+// Modules
+#include "DCDC_Buck.schrune"
+
+// Parts
+#include "PJ_002BH.schrune"
+#include "P_2_54_1_3P.schrune"
+#include "AMS1117_3_3.schrune"
+
+module top(){
+    rail VIN;
+    rail power_5v;
+    rail power_3v3;
+
+    VIN.voltage = 21V;
+    power_5v.voltage = 5V;
+    power_3v3.voltage = 3.3V;
+
+    VIN.l ~ power_3v3.l ~ power_5v.l;
+    power_3v3.l.name = "GND";
+
+    part powerIn = new PJ_002BH();
+    part powerOut = new P_2_54_1_3P();
+
+    mod buck = new DCDC_Buck(5V); // 5V DC-DC buck converter
+    buck.power_in ~ VIN;
+    buck.power_out ~ power_5v; 
+
+    mod ldo = new LDO_3v3();
+    ldo.power_in ~ power_5v;
+    ldo.power_out ~ power_3v3;
+
+    powerOut[1] ~ VIN.l;
+    powerOut[2] ~ power_5v.h;
+    powerOut[3] ~ power_3v3.h;
+
+    powerIn[1] ~ VIN.h;
+    powerIn[2] ~ VIN.l;
+    powerIn[3] ~ VIN.l;
+}
+
+module LDO_3v3(){
+    rail power_in;
+    rail power_out;
+
+    power_in.voltage = 4v-12v;
+    power_in.l ~ power_out.l;
+    
+    part ldo = new AMS1117_3_3();
+    power_in.h ~ ldo.VIN;
+    power_out.h ~ ldo.VOUT;
+    power_out.l ~ ldo.GND;
+
+    cin = new Capacitor(value="10uF +/- 20%");
+    power_in.h ~> cin ~> power_out.l;
+
+    cout = new Capacitor(value="22uF +/- 20%");
+    power_out.h ~> cout ~> power_out.l;
+}

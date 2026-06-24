@@ -1,0 +1,15 @@
+part P_1206W4F1002T5E {
+    info: {
+        partNumber: "1206W4F1002T5E",
+        manufacture: "UNI-ROYAL(厚声)",
+        footprint: "./P_1206W4F1002T5E.kicad_mod",
+        symbol: "./P_1206W4F1002T5E.kicad_sym",
+        LCSC: "C17902",
+        designatorPrefix: "R",
+    }
+
+    pins: [
+        1:1,
+        2:2,
+    ]
+}

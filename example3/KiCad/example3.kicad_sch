@@ -1,0 +1,350 @@
+(kicad_sch (version 20260306) (generator "Schrune") (generator_version "10.0")
+  (uuid c0afe28b-8e23-5fa4-cc63-7f66c0859b44)
+  (paper "A4")
+  (lib_symbols
+    (symbol "PJ-002BH"
+        (in_bom yes)
+        (on_board yes)
+        (property
+          "Reference"
+          "DC"
+          (id 0)
+          (at 0 6.35 0)
+          (hide yes) (effects (font (size 1.27 1.27) ) )
+        )
+        (property
+          "Value"
+          "PJ-002BH"
+          (id 1)
+          (at 0 -8.89 0)
+          (hide yes) (effects (font (size 1.27 1.27) ) )
+        )
+        (property
+          "Footprint"
+          "Schrune:DC-IN-TH_PJ-002BH"
+          (id 2)
+          (at 0 -11.43 0)
+          (hide yes) (effects (font (size 1.27 1.27) ))
+        )
+        (property
+          "Datasheet"
+          "https://www.lcsc.com/datasheet/C22359705.pdf"
+          (id 3)
+          (at 0 -13.97 0)
+          (hide yes) (effects (font (size 1.27 1.27) ))
+        )
+        (property
+          "Manufacturer"
+          "CUI"
+          (id 4)
+          (at 0 -16.51 0)
+          (hide yes) (effects (font (size 1.27 1.27) ))
+        )
+        (property
+          "MPN"
+          "PJ-002BH"
+          (id 5)
+          (at 0 -19.05 0)
+          (hide yes) (effects (font (size 1.27 1.27) ))
+        )
+        (property
+          "LCSC Part"
+          "C22359705"
+          (id 6)
+          (at 0 -21.59 0)
+          (hide yes) (effects (font (size 1.27 1.27) ))
+        )
+        (symbol "PJ-002BH_0_1"
+          (rectangle
+            (start -1.27 2.79)
+            (end -0.25 -0.25)
+            (stroke (width 0) (type default))
+            (fill (type background))
+          )
+          (arc
+            (start -6.35 2.29)
+            (mid -7.37 1.27)
+            (end -6.35 0.25)
+            (stroke (width 0) (type default))
+            (fill (type none))
+          )
+          (polyline
+            (pts
+              (xy 1.27 1.27) (xy -0.25 1.27)
+            )
+            (stroke (width 0) (type default))
+            (fill (type none))
+          )
+          (polyline
+            (pts
+              (xy -1.27 2.29) (xy -6.35 2.29)
+            )
+            (stroke (width 0) (type default))
+            (fill (type none))
+          )
+          (polyline
+            (pts
+              (xy -1.27 0.25) (xy -6.35 0.25)
+            )
+            (stroke (width 0) (type default))
+            (fill (type none))
+          )
+          (polyline
+            (pts
+              (xy 1.27 -3.81) (xy -6.10 -3.81) (xy -6.60 -2.79) (xy -7.11 -3.81)
+            )
+            (stroke (width 0) (type default))
+            (fill (type none))
+          )
+          (polyline
+            (pts
+              (xy 1.27 -1.27) (xy -3.05 -1.27) (xy -3.05 -3.81) (xy -3.30 -2.54)
+            )
+            (stroke (width 0) (type default))
+            (fill (type none))
+          )
+          (polyline
+            (pts
+              (xy -3.05 -3.81) (xy -2.79 -2.54)
+            )
+            (stroke (width 0) (type default))
+            (fill (type none))
+          )
+          (pin unspecified line
+            (at 6.35 1.27 180)
+            (length 5.08)
+            (name "1" (effects (font (size 1.27 1.27))))
+            (number "1" (effects (font (size 1.27 1.27))))
+          )
+          (pin unspecified line
+            (at 6.35 -3.81 180)
+            (length 5.08)
+            (name "2" (effects (font (size 1.27 1.27))))
+            (number "2" (effects (font (size 1.27 1.27))))
+          )
+          (pin unspecified line
+            (at 6.35 -1.27 180)
+            (length 5.08)
+            (name "3" (effects (font (size 1.27 1.27))))
+            (number "3" (effects (font (size 1.27 1.27))))
+          )
+        )
+      )
+    (symbol "Header-Male-2.54_1x3"
+        (in_bom yes)
+        (on_board yes)
+        (property
+          "Reference"
+          "H"
+          (id 0)
+          (at 0 7.62 0)
+          (hide yes) (effects (font (size 1.27 1.27) ) )
+        )
+        (property
+          "Value"
+          "Header-Male-2.54_1x3"
+          (id 1)
+          (at 0 -7.62 0)
+          (hide yes) (effects (font (size 1.27 1.27) ) )
+        )
+        (property
+          "Footprint"
+          "Schrune:HDR-TH_3P-P2.54-V-M-1"
+          (id 2)
+          (at 0 -10.16 0)
+          (hide yes) (effects (font (size 1.27 1.27) ))
+        )
+        (property
+          "Datasheet"
+          "https://lcsc.com/product-detail/Male-Header_Header-2-54mm-1-3P_C49257.html"
+          (id 3)
+          (at 0 -12.70 0)
+          (hide yes) (effects (font (size 1.27 1.27) ))
+        )
+        (property
+          "Manufacturer"
+          "BOOMELE(博穆精密)"
+          (id 4)
+          (at 0 -15.24 0)
+          (hide yes) (effects (font (size 1.27 1.27) ))
+        )
+        (property
+          "MPN"
+          "2.54-1*3P针"
+          (id 5)
+          (at 0 -17.78 0)
+          (hide yes) (effects (font (size 1.27 1.27) ))
+        )
+        (property
+          "LCSC Part"
+          "C49257"
+          (id 6)
+          (at 0 -20.32 0)
+          (hide yes) (effects (font (size 1.27 1.27) ))
+        )
+        (property
+          "ki_keywords"
+          "Pin Headers"
+          (id 8)
+          (at 0 -22.86 0)
+          (hide yes) (effects (font (size 1.27 1.27) ))
+        )
+        (property
+          "ki_description"
+          "2.54mm 1*3P"
+          (id 9)
+          (at 0 -25.40 0)
+          (hide yes) (effects (font (size 1.27 1.27) ))
+        )
+        (symbol "Header-Male-2.54_1x3_0_1"
+          (rectangle
+            (start -0.51 5.08)
+            (end 4.57 -5.08)
+            (stroke (width 0) (type default))
+            (fill (type background))
+          )
+          (pin input line
+            (at -2.54 -2.54 0)
+            (length 2.54)
+            (name "3" (effects (font (size 1.27 1.27))))
+            (number "3" (effects (font (size 1.27 1.27))))
+          )
+          (pin input line
+            (at -2.54 2.54 0)
+            (length 2.54)
+            (name "1" (effects (font (size 1.27 1.27))))
+            (number "1" (effects (font (size 1.27 1.27))))
+          )
+          (pin input line
+            (at -2.54 -0.00 0)
+            (length 2.54)
+            (name "2" (effects (font (size 1.27 1.27))))
+            (number "2" (effects (font (size 1.27 1.27))))
+          )
+        )
+      )
+  )
+  (symbol (lib_id "PJ-002BH") (at 35.56 35.56 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 0b89faa8-c174-8778-6544-60f20250bcbe)
+    (property "Reference" "DC1" (at 35.56 30.48 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "PJ-002BH" (at 35.56 40.64 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Schrune:PJ_002BH" (at 35.56 43.18 0) (hide yes)
+      (effects (font (size 1.27 1.27)))
+    )
+    (pin "1" (uuid b484cc00-17c1-9e13-a1b4-13a740a2f151))
+    (pin "2" (uuid c627c563-95b6-20c7-c7ce-2f12f0f1f4de))
+    (pin "3" (uuid 56fe2d6a-b2cf-11cb-82c6-2cc4fb85047c))
+    (instances
+      (project "example3"
+        (path "/"
+          (reference "DC1")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol (lib_id "Header-Male-2.54_1x3") (at 86.36 35.56 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 9797fc58-c8f7-d188-43ae-d9f0bf9f0063)
+    (property "Reference" "H1" (at 86.36 30.48 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "2.54-1*3P针" (at 86.36 40.64 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Schrune:P_2_54_1_3P" (at 86.36 43.18 0) (hide yes)
+      (effects (font (size 1.27 1.27)))
+    )
+    (pin "1" (uuid 56b5f078-e840-23a9-c122-f12f09bc5928))
+    (pin "2" (uuid 407dfeb0-60e5-4bd8-0061-be324cb8da61))
+    (pin "3" (uuid aaf49806-1cfb-c2b6-b3ce-c1f203a79b7b))
+    (instances
+      (project "example3"
+        (path "/"
+          (reference "H1")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire (pts (xy 41.91 36.83) (xy 46.99 36.83))
+    (stroke (width 0) (type default))
+    (uuid 7becdda6-002d-6cf6-df50-eaadf688a94b)
+  )
+  (global_label "VIN_h" (shape input) (at 44.45 36.83 0)
+    (effects (font (size 1.27 1.27)))
+    (uuid 02f043ca-a618-23c7-ee3b-e4c974bcca69)
+  )
+  (wire (pts (xy 41.91 31.75) (xy 46.99 31.75))
+    (stroke (width 0) (type default))
+    (uuid ea370d5f-c145-5639-0e9c-31d579c27946)
+  )
+  (global_label "GND" (shape input) (at 44.45 31.75 0)
+    (effects (font (size 1.27 1.27)))
+    (uuid a3d2e028-0c98-c1ea-e913-48706e75a10b)
+  )
+  (wire (pts (xy 41.91 34.29) (xy 46.99 34.29))
+    (stroke (width 0) (type default))
+    (uuid 2b51ce60-e3e7-81ea-01c2-223e1f732731)
+  )
+  (global_label "GND" (shape input) (at 44.45 34.29 0)
+    (effects (font (size 1.27 1.27)))
+    (uuid 11777761-1003-721d-b7ea-19813ba69586)
+  )
+  (wire (pts (xy 83.82 38.10) (xy 78.74 38.10))
+    (stroke (width 0) (type default))
+    (uuid 322d478b-cf3c-8f70-2291-05bd87e24539)
+  )
+  (global_label "GND" (shape input) (at 81.28 38.10 180)
+    (effects (font (size 1.27 1.27)))
+    (uuid 11ffa624-9bf9-9195-7066-da79064e122d)
+  )
+  (wire (pts (xy 83.82 35.56) (xy 78.74 35.56))
+    (stroke (width 0) (type default))
+    (uuid dd56ff2e-de2a-effb-4f04-8612b4e5dbf7)
+  )
+  (global_label "power_5v_h" (shape input) (at 81.28 35.56 180)
+    (effects (font (size 1.27 1.27)))
+    (uuid d0094496-feda-5df6-67ca-5d6568fb6be5)
+  )
+  (wire (pts (xy 83.82 33.02) (xy 78.74 33.02))
+    (stroke (width 0) (type default))
+    (uuid 99d422a6-1eae-61d3-7284-8de38861bedc)
+  )
+  (global_label "power_3v3_h" (shape input) (at 81.28 33.02 180)
+    (effects (font (size 1.27 1.27)))
+    (uuid a3e1f6f6-fdf6-938e-6a5e-b8527df3e6c9)
+  )
+  (sheet (at 35.56 35.56) (size 30.48 15.24)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid c0a2dc63-99fb-6a05-fb3e-1c1122d62bae)
+    (property "Sheetname" "buck" (at 35.56 34.29 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "example3_buck.kicad_sch" (at 35.56 52.07 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+  (sheet (at 35.56 58.42) (size 30.48 15.24)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid bfb7e6a6-75d9-3bc3-2e14-83663791d61a)
+    (property "Sheetname" "ldo" (at 35.56 57.15 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "example3_ldo.kicad_sch" (at 35.56 74.93 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+  (sheet_instances
+    (path "/"
+      (page "1")
+    )
+  )
+)

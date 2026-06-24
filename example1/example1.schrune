@@ -1,0 +1,45 @@
+// Panel-Router - Schrune Example Script
+
+#include "BOOMELE_2_54_2_3P.schrune"
+#include "CUI_PJ_002BH.schrune"
+
+module top () {
+   // Basic Setup
+   rail v;
+   net pwm_cool;
+   net pwm_warm;
+   v.voltage = 20V +/- 25%;
+   v.h.name = "V+";
+   v.l.name = "GND";
+   
+   // I/O
+   part header_1 = new BOOMELE_2_54_2_3P();
+   part header_2 = new BOOMELE_2_54_2_3P();
+   part header_3 = new BOOMELE_2_54_2_3P();
+   part dc_input = new CUI_PJ_002BH();
+   
+   header_1[1] ~ v.h;
+   header_1[5] ~ v.h;
+   header_1[3] ~ pwm_cool;
+   header_1[4] ~ pwm_warm;
+   header_1[2] ~ v.l;
+   header_1[6] ~ v.l;
+   
+   header_2[1] ~ v.h;
+   header_2[5] ~ v.h;
+   header_2[3] ~ pwm_cool;
+   header_2[4] ~ pwm_warm;
+   header_2[2] ~ v.l;
+   header_2[6] ~ v.l;
+   
+   header_3[1] ~ v.h;
+   header_3[5] ~ v.h;
+   header_3[3] ~ pwm_cool;
+   header_3[4] ~ pwm_warm;
+   header_3[2] ~ v.l;
+   header_3[6] ~ v.l;
+   
+   dc_input.VIN ~ v.h;
+   dc_input.GND ~ v.l;
+   dc_input[3] ~ v.l;
+}

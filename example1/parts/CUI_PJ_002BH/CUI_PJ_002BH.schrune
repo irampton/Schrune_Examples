@@ -1,0 +1,17 @@
+part CUI_PJ_002BH {
+    info: {
+        partNumber: "PJ-002BH",
+        manufacture: "CUI",
+        footprint: "./",
+        symbol: "./",
+        model: "./",
+        LCSC: "C22359705",
+        designatorPrefix: "DC"
+    }
+
+    pins: [
+        VIN:1,
+        GND:2,
+        3:3
+    ]
+}

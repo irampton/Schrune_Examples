@@ -1,0 +1,14 @@
+{
+  "board": {
+    "design_settings": {
+      "defaults": {}
+    }
+  },
+  "meta": {
+    "filename": "example4.kicad_pro",
+    "version": 1
+  },
+  "net_settings": {
+    "classes": []
+  }
+}

@@ -1,0 +1,15 @@
+part SS34 {
+    info: {
+        partNumber: "SS34",
+        manufacture: "MDD(辰达半导体)",
+        footprint: "./SS34.kicad_mod",
+        symbol: "./SS34.kicad_sym",
+        LCSC: "C8678",
+        designatorPrefix: "D",
+    }
+
+    pins: [
+        1:1,
+        2:2,
+    ]
+}

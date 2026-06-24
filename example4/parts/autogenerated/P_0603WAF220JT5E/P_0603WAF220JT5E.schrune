@@ -1,0 +1,15 @@
+part P_0603WAF220JT5E {
+    info: {
+        partNumber: "0603WAF220JT5E",
+        manufacture: "UNI-ROYAL(厚声)",
+        footprint: "./P_0603WAF220JT5E.kicad_mod",
+        symbol: "./P_0603WAF220JT5E.kicad_sym",
+        LCSC: "C23345",
+        designatorPrefix: "R",
+    }
+
+    pins: [
+        1:1,
+        2:2,
+    ]
+}

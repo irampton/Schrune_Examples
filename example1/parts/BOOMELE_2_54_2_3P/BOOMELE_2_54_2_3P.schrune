@@ -1,0 +1,20 @@
+part BOOMELE_2_54_2_3P {
+    info: {
+        partNumber: "2.54-2*3P针",
+        manufacture: "BOOMELE",
+        footprint: "./",
+        symbol: "./",
+        model: "./",
+        LCSC: "C65114",
+        designatorPrefix: "J"
+    }
+
+    pins: [
+        1:1,
+        2:2,
+        3:3,
+        4:4,
+        5:5,
+        6:6
+    ]
+}

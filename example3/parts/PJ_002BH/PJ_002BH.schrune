@@ -1,0 +1,16 @@
+part PJ_002BH {
+    info: {
+        partNumber: "PJ-002BH",
+        manufacture: "CUI",
+        footprint: "./PJ_002BH.kicad_mod",
+        symbol: "./PJ_002BH.kicad_sym",
+        LCSC: "C22359705",
+        designatorPrefix: "DC",
+    }
+
+    pins: [
+        1:1,
+        2:2,
+        3:3,
+    ]
+}

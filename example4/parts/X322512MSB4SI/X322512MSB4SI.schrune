@@ -1,0 +1,16 @@
+part X322512MSB4SI {
+    info: {
+        partNumber: "X322512MSB4SI",
+        manufacture: "YXC(扬兴晶振)",
+        footprint: "./X322512MSB4SI.kicad_mod",
+        symbol: "./X322512MSB4SI.kicad_sym",
+        LCSC: "C9002",
+        designatorPrefix: "X",
+    }
+
+    pins: [
+        OSC1:1,
+        GND:2~4,
+        OSC2:3,
+    ]
+}

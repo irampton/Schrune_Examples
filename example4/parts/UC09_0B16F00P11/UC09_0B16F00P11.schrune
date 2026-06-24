@@ -1,0 +1,24 @@
+part UC09_0B16F00P11 {
+    info: {
+        partNumber: "UC09-0B16F00P11",
+        manufacture: "BXCONN(宝讯)",
+        footprint: "./UC09_0B16F00P11.kicad_mod",
+        symbol: "./UC09_0B16F00P11.kicad_sym",
+        LCSC: "C36936538",
+        designatorPrefix: "USB",
+    }
+
+    pins: [
+        EH:17~18~19~20,
+        rail VBUS: {
+            h: A4B9~B4A9,
+            l: A1B12~B1A12
+        },
+        CC1:A5,
+        Dp1:A6~B6,
+        Dn1:A7~B7,
+        SBU1:A8,
+        CC2:B5,
+        SBU2:B8
+    ]
+}

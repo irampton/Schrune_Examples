@@ -1,0 +1,447 @@
+(kicad_sch (version 20260306) (generator "Schrune") (generator_version "10.0")
+  (uuid a8907918-63c7-2cc2-2a92-df893aa05b5e)
+  (paper "A4")
+  (lib_symbols
+    (symbol "AMS1117-3.3"
+        (in_bom yes)
+        (on_board yes)
+        (property
+          "Reference"
+          "U"
+          (id 0)
+          (at 0 7.62 0)
+          (hide yes) (effects (font (size 1.27 1.27) ) )
+        )
+        (property
+          "Value"
+          "AMS1117-3.3"
+          (id 1)
+          (at 0 -7.62 0)
+          (hide yes) (effects (font (size 1.27 1.27) ) )
+        )
+        (property
+          "Footprint"
+          "Schrune:SOT-223-3_L6.5-W3.4-P2.30-LS7.0-BR"
+          (id 2)
+          (at 0 -10.16 0)
+          (hide yes) (effects (font (size 1.27 1.27) ))
+        )
+        (property
+          "Datasheet"
+          "https://lcsc.com/product-detail/Low-Dropout-Regulators-LDO_AMS_AMS1117-3-3_AMS1117-3-3_C6186.html"
+          (id 3)
+          (at 0 -12.70 0)
+          (hide yes) (effects (font (size 1.27 1.27) ))
+        )
+        (property
+          "Manufacturer"
+          "Advanced Monolithic Systems"
+          (id 4)
+          (at 0 -15.24 0)
+          (hide yes) (effects (font (size 1.27 1.27) ))
+        )
+        (property
+          "MPN"
+          "AMS1117-3.3"
+          (id 5)
+          (at 0 -17.78 0)
+          (hide yes) (effects (font (size 1.27 1.27) ))
+        )
+        (property
+          "LCSC Part"
+          "C6186"
+          (id 6)
+          (at 0 -20.32 0)
+          (hide yes) (effects (font (size 1.27 1.27) ))
+        )
+        (property
+          "ki_keywords"
+          "Linear Voltage Regulators (LDO)"
+          (id 8)
+          (at 0 -22.86 0)
+          (hide yes) (effects (font (size 1.27 1.27) ))
+        )
+        (symbol "AMS1117-3.3_0_1"
+          (rectangle
+            (start -8.89 5.08)
+            (end 8.89 -5.08)
+            (stroke (width 0) (type default))
+            (fill (type background))
+          )
+          (circle
+            (center -7.62 3.81)
+            (radius 0.38)
+            (stroke (width 0) (type default))
+            (fill (type none))
+          )
+          (pin unspecified line
+            (at -11.43 2.54 0)
+            (length 2.54)
+            (name "GND" (effects (font (size 1.27 1.27))))
+            (number "1" (effects (font (size 1.27 1.27))))
+          )
+          (pin unspecified line
+            (at -11.43 -0.00 0)
+            (length 2.54)
+            (name "VOUT" (effects (font (size 1.27 1.27))))
+            (number "2" (effects (font (size 1.27 1.27))))
+          )
+          (pin unspecified line
+            (at -11.43 -2.54 0)
+            (length 2.54)
+            (name "VIN" (effects (font (size 1.27 1.27))))
+            (number "3" (effects (font (size 1.27 1.27))))
+          )
+          (pin unspecified line
+            (at 11.43 -0.00 180)
+            (length 2.54)
+            (name "VOUT" (effects (font (size 1.27 1.27))))
+            (number "4" (effects (font (size 1.27 1.27))))
+          )
+        )
+      )
+    (symbol "CL10A106MQ8NNNC"
+        (in_bom yes)
+        (on_board yes)
+        (property
+          "Reference"
+          "C"
+          (id 0)
+          (at 0 5.08 0)
+          (hide yes) (effects (font (size 1.27 1.27) ) )
+        )
+        (property
+          "Value"
+          "CL10A106MQ8NNNC"
+          (id 1)
+          (at 0 -5.08 0)
+          (hide yes) (effects (font (size 1.27 1.27) ) )
+        )
+        (property
+          "Footprint"
+          "Schrune:C0603"
+          (id 2)
+          (at 0 -7.62 0)
+          (hide yes) (effects (font (size 1.27 1.27) ))
+        )
+        (property
+          "Datasheet"
+          "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL10A106MQ8NNNC_10uF-106-20-6-3V_C1691.html"
+          (id 3)
+          (at 0 -10.16 0)
+          (hide yes) (effects (font (size 1.27 1.27) ))
+        )
+        (property
+          "Manufacturer"
+          "SAMSUNG(三星)"
+          (id 4)
+          (at 0 -12.70 0)
+          (hide yes) (effects (font (size 1.27 1.27) ))
+        )
+        (property
+          "MPN"
+          "CL10A106MQ8NNNC"
+          (id 5)
+          (at 0 -15.24 0)
+          (hide yes) (effects (font (size 1.27 1.27) ))
+        )
+        (property
+          "LCSC Part"
+          "C1691"
+          (id 6)
+          (at 0 -17.78 0)
+          (hide yes) (effects (font (size 1.27 1.27) ))
+        )
+        (property
+          "ki_keywords"
+          "Multilayer Ceramic Capacitors MLCC - SMD/SMT"
+          (id 8)
+          (at 0 -20.32 0)
+          (hide yes) (effects (font (size 1.27 1.27) ))
+        )
+        (symbol "CL10A106MQ8NNNC_0_1"
+          (polyline
+            (pts
+              (xy -0.51 -2.03) (xy -0.51 2.03)
+            )
+            (stroke (width 0) (type default))
+            (fill (type none))
+          )
+          (polyline
+            (pts
+              (xy 2.54 -0.00) (xy 0.51 -0.00)
+            )
+            (stroke (width 0) (type default))
+            (fill (type none))
+          )
+          (polyline
+            (pts
+              (xy 0.51 2.03) (xy 0.51 -2.03)
+            )
+            (stroke (width 0) (type default))
+            (fill (type none))
+          )
+          (polyline
+            (pts
+              (xy -0.51 -0.00) (xy -2.54 -0.00)
+            )
+            (stroke (width 0) (type default))
+            (fill (type none))
+          )
+          (pin unspecified line
+            (at -5.08 -0.00 0)
+            (length 2.54)
+            (name "1" (effects (font (size 1.27 1.27))))
+            (number "1" (effects (font (size 1.27 1.27))))
+          )
+          (pin unspecified line
+            (at 5.08 -0.00 180)
+            (length 2.54)
+            (name "2" (effects (font (size 1.27 1.27))))
+            (number "2" (effects (font (size 1.27 1.27))))
+          )
+        )
+      )
+    (symbol "CL31A226MOHNNNE"
+        (in_bom yes)
+        (on_board yes)
+        (property
+          "Reference"
+          "C"
+          (id 0)
+          (at 0 5.08 0)
+          (hide yes) (effects (font (size 1.27 1.27) ) )
+        )
+        (property
+          "Value"
+          "CL31A226MOHNNNE"
+          (id 1)
+          (at 0 -5.08 0)
+          (hide yes) (effects (font (size 1.27 1.27) ) )
+        )
+        (property
+          "Footprint"
+          "Schrune:C1206"
+          (id 2)
+          (at 0 -7.62 0)
+          (hide yes) (effects (font (size 1.27 1.27) ))
+        )
+        (property
+          "Datasheet"
+          "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL31A226MOHNNNE_22uF-226-20-16V_C1934.html"
+          (id 3)
+          (at 0 -10.16 0)
+          (hide yes) (effects (font (size 1.27 1.27) ))
+        )
+        (property
+          "Manufacturer"
+          "SAMSUNG(三星)"
+          (id 4)
+          (at 0 -12.70 0)
+          (hide yes) (effects (font (size 1.27 1.27) ))
+        )
+        (property
+          "MPN"
+          "CL31A226MOHNNNE"
+          (id 5)
+          (at 0 -15.24 0)
+          (hide yes) (effects (font (size 1.27 1.27) ))
+        )
+        (property
+          "LCSC Part"
+          "C1934"
+          (id 6)
+          (at 0 -17.78 0)
+          (hide yes) (effects (font (size 1.27 1.27) ))
+        )
+        (property
+          "ki_keywords"
+          "Multilayer Ceramic Capacitors MLCC - SMD/SMT"
+          (id 8)
+          (at 0 -20.32 0)
+          (hide yes) (effects (font (size 1.27 1.27) ))
+        )
+        (property
+          "ki_description"
+          "22uF (226) ±20% 16V"
+          (id 9)
+          (at 0 -22.86 0)
+          (hide yes) (effects (font (size 1.27 1.27) ))
+        )
+        (symbol "CL31A226MOHNNNE_0_1"
+          (polyline
+            (pts
+              (xy -0.51 2.03) (xy -0.51 -2.03)
+            )
+            (stroke (width 0) (type default))
+            (fill (type none))
+          )
+          (polyline
+            (pts
+              (xy 0.51 2.03) (xy 0.51 -2.03)
+            )
+            (stroke (width 0) (type default))
+            (fill (type none))
+          )
+          (polyline
+            (pts
+              (xy -1.27 -0.00) (xy -0.51 -0.00)
+            )
+            (stroke (width 0) (type default))
+            (fill (type none))
+          )
+          (polyline
+            (pts
+              (xy 0.51 -0.00) (xy 1.27 -0.00)
+            )
+            (stroke (width 0) (type default))
+            (fill (type none))
+          )
+          (pin input line
+            (at -3.81 -0.00 0)
+            (length 2.54)
+            (name "1" (effects (font (size 1.27 1.27))))
+            (number "1" (effects (font (size 1.27 1.27))))
+          )
+          (pin input line
+            (at 3.81 -0.00 180)
+            (length 2.54)
+            (name "2" (effects (font (size 1.27 1.27))))
+            (number "2" (effects (font (size 1.27 1.27))))
+          )
+        )
+      )
+  )
+  (symbol (lib_id "AMS1117-3.3") (at 35.56 35.56 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 1016918d-be15-f792-0862-71a84d998079)
+    (property "Reference" "U1" (at 35.56 30.48 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "AMS1117-3.3" (at 35.56 40.64 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Schrune:AMS1117_3_3" (at 35.56 43.18 0) (hide yes)
+      (effects (font (size 1.27 1.27)))
+    )
+    (pin "1" (uuid 012ed47e-f5b4-f374-b8f2-cd6ff478626c))
+    (pin "2" (uuid e3fd8adc-61b9-1a2d-36d9-67528aa5da5a))
+    (pin "3" (uuid 24d16a94-53b8-48fc-dc01-815ce327bea2))
+    (pin "4" (uuid b7c60635-2287-5a91-5d1a-d7a48e4236d0))
+    (instances
+      (project "example4"
+        (path "/"
+          (reference "U1")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol (lib_id "CL10A106MQ8NNNC") (at 86.36 35.56 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 6e2762dd-205a-d678-5fdb-7786a0ce0818)
+    (property "Reference" "C1" (at 86.36 30.48 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "10uF +/- 20%" (at 86.36 40.64 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Schrune:CL10A106MQ8NNNC" (at 86.36 43.18 0) (hide yes)
+      (effects (font (size 1.27 1.27)))
+    )
+    (pin "1" (uuid 0df11690-23a4-5c1c-9d25-dca58d0ff92b))
+    (pin "2" (uuid 4be1807a-d386-b788-6017-87e596a74c2a))
+    (instances
+      (project "example4"
+        (path "/"
+          (reference "C1")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol (lib_id "CL31A226MOHNNNE") (at 137.16 35.56 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 8c6d3520-2abe-c24f-eb33-493b0e30fdc2)
+    (property "Reference" "C14" (at 137.16 30.48 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "22uF +/- 20%" (at 137.16 40.64 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Schrune:CL31A226MOHNNNE" (at 137.16 43.18 0) (hide yes)
+      (effects (font (size 1.27 1.27)))
+    )
+    (pin "1" (uuid da665fdb-e17c-364d-7fff-38d5a77dc93a))
+    (pin "2" (uuid 4dbc3171-a321-8c87-c27b-01b20e70994b))
+    (instances
+      (project "example4"
+        (path "/"
+          (reference "C14")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire (pts (xy 24.13 38.10) (xy 19.05 38.10))
+    (stroke (width 0) (type default))
+    (uuid 3039b4a8-111e-c768-b21d-1e3a18d06f35)
+  )
+  (global_label "power_3v3_l" (shape input) (at 21.59 38.10 180)
+    (effects (font (size 1.27 1.27)))
+    (uuid 39024154-2aac-fc1e-b8af-fcb5976513b7)
+  )
+  (wire (pts (xy 24.13 35.56) (xy 19.05 35.56))
+    (stroke (width 0) (type default))
+    (uuid 931b17a7-2efa-9ac6-e351-c7be58da8a19)
+  )
+  (global_label "power_3v3_h" (shape input) (at 21.59 35.56 180)
+    (effects (font (size 1.27 1.27)))
+    (uuid e5f34188-5566-bbe7-c6fb-b1bd454d2935)
+  )
+  (wire (pts (xy 24.13 33.02) (xy 19.05 33.02))
+    (stroke (width 0) (type default))
+    (uuid 8b5e9f57-c094-914a-9bd6-dc6a84d19056)
+  )
+  (global_label "power_5v_h" (shape input) (at 21.59 33.02 180)
+    (effects (font (size 1.27 1.27)))
+    (uuid dc7c68b2-78ec-fd4b-aaed-2e755336a7e1)
+  )
+  (wire (pts (xy 81.28 35.56) (xy 76.20 35.56))
+    (stroke (width 0) (type default))
+    (uuid 8ea3797c-389b-f6f9-ba03-60b56f248eff)
+  )
+  (global_label "power_5v_h" (shape input) (at 78.74 35.56 180)
+    (effects (font (size 1.27 1.27)))
+    (uuid a654d01b-bb7c-7181-6d63-9d3e6a15da12)
+  )
+  (wire (pts (xy 91.44 35.56) (xy 96.52 35.56))
+    (stroke (width 0) (type default))
+    (uuid 5af1919b-a27e-fd9f-8cb4-87ad2262d187)
+  )
+  (global_label "power_3v3_l" (shape input) (at 93.98 35.56 0)
+    (effects (font (size 1.27 1.27)))
+    (uuid e8bda612-dcc0-e72b-025b-24f999d4ea18)
+  )
+  (wire (pts (xy 133.35 35.56) (xy 128.27 35.56))
+    (stroke (width 0) (type default))
+    (uuid 8c4f7e0d-4aa0-872b-0f2d-ff7b582eef5a)
+  )
+  (global_label "power_3v3_h" (shape input) (at 130.81 35.56 180)
+    (effects (font (size 1.27 1.27)))
+    (uuid 62d3638d-0358-fd19-18a4-8e5259041a66)
+  )
+  (wire (pts (xy 140.97 35.56) (xy 146.05 35.56))
+    (stroke (width 0) (type default))
+    (uuid 54e8d763-7aab-9566-4782-271d61d7702f)
+  )
+  (global_label "power_3v3_l" (shape input) (at 143.51 35.56 0)
+    (effects (font (size 1.27 1.27)))
+    (uuid 5e75c220-2205-c50b-0bba-be904fa5ea14)
+  )
+  (sheet_instances
+    (path "/"
+      (page "1")
+    )
+  )
+)

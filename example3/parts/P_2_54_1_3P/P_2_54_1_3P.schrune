@@ -1,0 +1,16 @@
+part P_2_54_1_3P {
+    info: {
+        partNumber: "2.54-1*3P针",
+        manufacture: "BOOMELE(博穆精密)",
+        footprint: "./P_2_54_1_3P.kicad_mod",
+        symbol: "./P_2_54_1_3P.kicad_sym",
+        LCSC: "C49257",
+        designatorPrefix: "H",
+    }
+
+    pins: [
+        1:1,
+        2:2,
+        3:3,
+    ]
+}

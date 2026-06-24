@@ -1,0 +1,15 @@
+part CL31A226MOHNNNE {
+    info: {
+        partNumber: "CL31A226MOHNNNE",
+        manufacture: "SAMSUNG(三星)",
+        footprint: "./CL31A226MOHNNNE.kicad_mod",
+        symbol: "./CL31A226MOHNNNE.kicad_sym",
+        LCSC: "C1934",
+        designatorPrefix: "C",
+    }
+
+    pins: [
+        1:1,
+        2:2,
+    ]
+}

@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "assignments": {
+    "DC\u0000id:\u0000powerIn\u0000": [
+      "DC1"
+    ],
+    "H\u0000id:\u0000powerOut\u0000": [
+      "H1"
+    ],
+    "U\u0000id:buck\u0000regulator\u0000": [
+      "U2"
+    ],
+    "C\u0000id:buck\u0000cin1_0\u0000": [
+      "C7"
+    ],
+    "C\u0000id:buck\u0000cin1_1\u0000": [
+      "C8"
+    ],
+    "C\u0000id:buck\u0000cin2\u0000": [
+      "C3"
+    ],
+    "R\u0000id:buck\u0000en_r1\u0000": [
+      "R2"
+    ],
+    "R\u0000id:buck\u0000en_r2\u0000": [
+      "R3"
+    ],
+    "L\u0000id:buck\u0000inductor\u0000": [
+      "L1"
+    ],
+    "D\u0000id:buck\u0000flyback\u0000": [
+      "D1"
+    ],
+    "C\u0000id:buck\u0000boot_cap\u0000": [
+      "C1"
+    ],
+    "C\u0000id:buck\u0000cout_0\u0000": [
+      "C10"
+    ],
+    "C\u0000id:buck\u0000cout_1\u0000": [
+      "C11"
+    ],
+    "R\u0000id:buck\u0000fb_r1\u0000": [
+      "R4"
+    ],
+    "R\u0000id:buck\u0000fb_r2\u0000": [
+      "R5"
+    ],
+    "R\u0000id:buck\u0000comp_r1\u0000": [
+      "R1"
+    ],
+    "C\u0000id:buck\u0000comp_c1\u0000": [
+      "C9"
+    ],
+    "C\u0000id:buck\u0000comp_c2\u0000": [
+      "C5"
+    ],
+    "C\u0000id:buck\u0000ss_cap\u0000": [
+      "C2"
+    ],
+    "U\u0000id:ldo\u0000ldo\u0000": [
+      "U1"
+    ],
+    "C\u0000id:ldo\u0000cin\u0000": [
+      "C4"
+    ],
+    "C\u0000id:ldo\u0000cout\u0000": [
+      "C6"
+    ]
+  }
+}

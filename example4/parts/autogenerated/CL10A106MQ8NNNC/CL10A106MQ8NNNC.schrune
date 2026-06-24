@@ -1,0 +1,15 @@
+part CL10A106MQ8NNNC {
+    info: {
+        partNumber: "CL10A106MQ8NNNC",
+        manufacture: "SAMSUNG(三星)",
+        footprint: "./CL10A106MQ8NNNC.kicad_mod",
+        symbol: "./CL10A106MQ8NNNC.kicad_sym",
+        LCSC: "C1691",
+        designatorPrefix: "C",
+    }
+
+    pins: [
+        1:1,
+        2:2,
+    ]
+}

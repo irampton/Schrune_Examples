@@ -1,0 +1,15 @@
+part CL05B104KO5NNNC {
+    info: {
+        partNumber: "CL05B104KO5NNNC",
+        manufacture: "SAMSUNG(三星)",
+        footprint: "./CL05B104KO5NNNC.kicad_mod",
+        symbol: "./CL05B104KO5NNNC.kicad_sym",
+        LCSC: "C1525",
+        designatorPrefix: "C",
+    }
+
+    pins: [
+        1:1,
+        2:2,
+    ]
+}

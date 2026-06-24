@@ -1,0 +1,113 @@
+#include "TPS54331DR"
+
+module DCDC_Buck (target_voltage) {
+    rail power_in;
+    rail power_out;
+
+    val fb_reference_voltage = 0.8V;
+    val fb_r1_resistance = 10kOhm;
+
+    power_in.l ~ power_out.l;
+    power_in.voltage = 3.5V-28V;
+
+    part regulator = new TPS54331DR;
+
+    // Input side
+    part cin1_0 = new Capacitor(value="4.7uF +/- 20%", footprint="1206", LCSC="C29823");
+    part cin1_1 = new Capacitor(value="4.7uF +/- 20%", footprint="1206", LCSC="C29823");
+    part cin2 = new Capacitor(value="10nF +/- 10%", footprint="0402", max_voltage="30V - 63V");
+
+    power_in.h ~> cin1_0 ~> power_in.l;
+    power_in.h ~> cin1_1 ~> power_in.l;
+    power_in.h ~> cin2 ~> power_in.l;
+    power_in.h ~ regulator.VIN;
+    power_in.l ~ regulator.GND;
+
+    // Under-voltage EN protection
+    part en_r1 = new Resistor(value="330kohm +/- 1%", footprint="0402");
+    part en_r2 = new Resistor(value="68kohm +/- 1%", footprint="0402");
+
+    power_in.h ~> en_r1 ~> regulator.EN;
+    regulator.EN ~> en_r2 ~> power_in.l;
+
+    // Power stage
+    part inductor = new Inductor(LCSC="C22463822"); // 5.5A 6.8uH 65mΩ ±20% SMD,7.1x6.6mm
+    part flyback = new Diode(LCSC="C8678"); // SS34
+
+    regulator.PH ~> inductor ~> power_out.h;
+    power_out.l ~> flyback ~> regulator.PH;
+
+    // Boot
+    part boot_cap = new Capacitor(
+        value="100nF +/- 10%",
+        footprint="0402",
+        max_voltage="16V - 25V"
+    );
+
+    regulator.BOOT ~> boot_cap ~> regulator.PH;
+
+    // Output side
+    // Used 10v caps for cost, change if output voltage is on the higher end
+    part cout_0 = new Capacitor(
+        value="47uF +/- 20%",
+        footprint="1206",
+        max_voltage="10V - 50V"
+    );
+
+    part cout_1 = new Capacitor(
+        value="47uF +/- 20%",
+        footprint="1206",
+        max_voltage="10V - 50V"
+    );
+
+    power_out.h ~> cout_0 ~> power_out.l;
+    power_out.h ~> cout_1 ~> power_out.l;
+
+    // Feedback/control: Vout = Vfb * (1 + Rtop / Rbottom).
+    part fb_r1 = new Resistor(
+        value=fb_r1_resistance,
+        tolerance="1%",
+        footprint="0402"
+    );
+
+    part fb_r2 = new Resistor(
+        value=fb_r1_resistance * fb_reference_voltage / (target_voltage - fb_reference_voltage),
+        tolerance="1%",
+        footprint="0603"
+    );
+
+    power_out.h ~> fb_r1 ~> regulator.VSENSE;
+    regulator.VSENSE ~> fb_r2 ~> power_out.l;
+
+    // COMP
+    part comp_r1 = new Resistor(
+        value="30kohm +/- 1%",
+        footprint="0603"
+    );
+
+    part comp_c1 = new Capacitor(
+        value="47pF +/- 5%",
+        footprint="0402",
+        max_voltage="5V - 63V",
+        LCSC="C1567"
+    );
+
+    part comp_c2 = new Capacitor(
+        value="1nF +/- 10%",
+        footprint="0402",
+        max_voltage="30V - 63V",
+        LCSC="C1523"
+    );
+
+    regulator.COMP ~> comp_c1 ~> power_out.l;
+    regulator.COMP ~> comp_c2 ~> comp_r1 ~> power_out.l;
+
+    // Slow Start
+    part ss_cap = new Capacitor(
+        value="10nF +/- 10%",
+        footprint="0402",
+        max_voltage="30V - 63V"
+    );
+
+    regulator.SS ~> ss_cap ~> power_in.l;
+}

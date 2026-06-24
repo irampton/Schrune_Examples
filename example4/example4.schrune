@@ -1,0 +1,28 @@
+#include "RP2040_Base.schrune"
+#include "LDO_3v3.schrune"
+
+#include "UC09_0B16F00P11.schrune"
+
+module top () {
+    rail power_5v;
+    rail power_3v3;
+
+    mod ldo = new LDO_3v3();
+    ldo.power_in ~ power_5v;
+    ldo.power_out ~ power_3v3;
+
+    mod rp2040 = new RP2040_Base();
+    rp2040.power_3v3 ~ power_3v3;
+
+    part usb = new UC09_0B16F00P11();
+    part CC1_R = new Resistor(value="5.1kohms +/- 5%", footprint="0402");
+    part CC2_R = new Resistor(value="5.1kohms +/- 5%", footprint="0402");
+
+    usb.Dp1 ~ usb.Dp2 ~ rp2040.usb_p;
+    usb.Dn1 ~ usb.Dn2 ~ rp2040.usb_n;
+
+    usb.VBUS ~ power_5v;
+
+    usb.CC1 ~> CC1_R ~> power_5v.l;
+    usb.CC2 ~> CC2_R ~> power_5v.l;
+}

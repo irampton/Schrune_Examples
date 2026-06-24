@@ -1,0 +1,131 @@
+#include "RP2040.schrune" //MCU
+#include "W25Q128JVSIQ.schrune" // Flash
+#include "X322512MSB4SI.schrune" // Oscillator 
+#include "TS_1088_AR02016.schrune" // Buttons
+
+
+module RP2040_Base () {
+    // Parts
+    part package = new RP2040();
+    part flash = new W25Q128JVSIQ();
+    part crystal = new X322512MSB4SI();
+    part reset_btn = new TS_1088_AR02016();
+    part boot_btn = new TS_1088_AR02016();
+
+    // Power
+    rail power_3v3;
+    power_3v3.voltage = 3.3V +/- 5%;
+    rail power_1v8;
+    power_1v8.voltage = 1.8V +/- 5%;
+    net gnd ~ power_3v3.l ~ power_1v8.l;
+
+    // External signals
+    net usb_p;
+    net usb_n;
+    net gpio0 ~ package.GPIO0;
+    net gpio1 ~ package.GPIO1;
+    net gpio2 ~ package.GPIO2;
+    net gpio3 ~ package.GPIO3;
+    net gpio4 ~ package.GPIO4;
+    net gpio5 ~ package.GPIO5;
+    net gpio6 ~ package.GPIO6;
+    net gpio7 ~ package.GPIO7;
+    net gpio8 ~ package.GPIO8;
+    net gpio9 ~ package.GPIO9;
+    net gpio10 ~ package.GPIO10;
+    net gpio11 ~ package.GPIO11;
+    net gpio12 ~ package.GPIO12;
+    net gpio13 ~ package.GPIO13;
+    net gpio14 ~ package.GPIO14;
+    net gpio15 ~ package.GPIO15;
+    net gpio16 ~ package.GPIO16;
+    net gpio17 ~ package.GPIO17;
+    net gpio18 ~ package.GPIO18;
+    net gpio19 ~ package.GPIO19;
+    net gpio20 ~ package.GPIO20;
+    net gpio21 ~ package.GPIO21;
+    net gpio22 ~ package.GPIO22;
+    net gpio23 ~ package.GPIO23;
+    net gpio24 ~ package.GPIO24;
+    net gpio25 ~ package.GPIO25;
+    net gpio26 ~ package.GPIO26_ADC0;
+    net gpio27 ~ package.GPIO27_ADC1;
+    net gpio28 ~ package.GPIO28_ADC2;
+    net gpio29 ~ package.GPIO29_ADC3;
+
+    // Interfaces & Net Groups
+    net<i2c> i2c0;
+    i2c0.SDA ~ gpio0;
+    i2c0.SCL ~ gpio1;
+    net<i2c> i2c1;
+    i2c1.SDA ~ gpio2;
+    i2c1.SCL ~ gpio3;
+
+    net<spi> spi0;
+    spi0.MOSI ~ gpio3;
+    spi0.MISO ~ gpio4;
+    spi0.CLK ~ gpio2;
+    net<spi> spi1;
+    spi1.MOSI ~ gpio11;
+    spi1.MISO ~ gpio12;
+    spi1.CLK ~ gpio10;
+
+    net<uart> uart0;
+    uart0.TX ~ gpio12;
+    uart0.RX ~ gpio13;
+    net<uart> uart1;
+    uart1.TX ~ gpio20;
+    uart1.RX ~ gpio21;
+
+
+    // USB
+    part[2] usb_series_resistors = new Resistor(value="22Ohm +/- 5%", footprint="0603");
+    usb_p ~> usb_series_resistors[0] ~> package.USB_DP;
+    usb_n ~> usb_series_resistors[1] ~> package.USB_DM;
+
+    // Reset button (active low on RUN with pullup)
+    part reset_btn_pullup = new Resistor(value="10kohms +/- 5%", footprint="0402");
+    power_3v3.l ~> reset_btn ~> package.RUN;
+    power_3v3.h ~> reset_btn_pullup ~> package.RUN;
+
+    // Boot button (active low on QSPI_SS through series resistor)
+    part boot_btn_res = new Resistor(value="10kohms +/- 5%", footprint="0402");
+    power_3v3.l ~> boot_btn ~> boot_btn_res ~> package.QSPI_SS;
+
+    // Flash
+    part qspi_ss_pullup = new Resistor(value="10kohms +/- 5%", footprint="0402");
+    power_3v3.h ~> qspi_ss_pullup ~> package.QSPI_SS;
+
+    flash.CS ~ package.QSPI_SS
+    flash.CLK ~ package.QSPI_SCLK
+    flash.DI ~ package.QSPI_SD0
+    flash.DO ~ package.QSPI_SD1
+    flash.IO2 ~ package.QSPI_SD2
+    flash.IO3 ~ package.QSPI_SD3
+
+    flash.GND ~ gnd;
+    flash.VCC ~ power_3v3.h;
+
+
+    // crystal
+    crystal_res = new Resistor(value="10kohms +/- 5%", footprint="0402");
+    part[2] crystal_caps = new Capacitor(value="20pF +/- 20%", footprint="0402");
+
+    package.XIN ~ crystal.OSC1;
+    crystal.OSC2 ~> crystal_res ~> package.XOUT;
+    crystal.GND ~ gnd;
+
+    crystal.OSC1 ~> crystal_caps[0] ~> gnd;
+    crystal.OSC2 ~> crystal_caps[1] ~> gnd;
+
+    // Capacitors
+    part[5] caps_3v3 = new Capacitor(value="1uF +/- 20%",footprint="0402");
+    for(let i = 0; i < caps_3v3.length;i++){
+        gnd ~> caps_3v3[i] ~> power_3v3.h;
+    }
+
+    part[5] caps_1v8 = new Capacitor(value="1uF +/- 20%",footprint="0402");
+    for(let i = 0; i < caps_1v8.length;i++){
+        gnd ~> caps_1v8[i] ~> power_1v8.h;
+    }
+}

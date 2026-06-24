@@ -1,0 +1,15 @@
+part P_1206B475K500NT {
+    info: {
+        partNumber: "1206B475K500NT",
+        manufacture: "FH(风华)",
+        footprint: "./P_1206B475K500NT.kicad_mod",
+        symbol: "./P_1206B475K500NT.kicad_sym",
+        LCSC: "C29823",
+        designatorPrefix: "C",
+    }
+
+    pins: [
+        1:1,
+        2:2,
+    ]
+}

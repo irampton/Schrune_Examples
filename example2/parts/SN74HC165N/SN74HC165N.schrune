@@ -1,0 +1,40 @@
+part SN74HC165N {
+    info: {
+        partNumber: "SN74HC165N",
+        manufacture: "TI(德州仪器)",
+        footprint: "./SN74HC165N.kicad_mod",
+        symbol: "./SN74HC165N.kicad_sym",
+        LCSC: "C2909",
+        designatorPrefix: "U",
+    }
+
+    pins: [
+        SH_nLD:1,
+        CLK:2,
+        E:3,
+        F:4,
+        G:5,
+        H:6,
+        QH:7,
+        GND:8,
+        QH_9:9,
+        SER:10,
+        A:11,
+        B:12,
+        C:13,
+        D:14,
+        CLK_INH:15,
+        VCC:16,
+        inputs: [
+            A:11,
+            B:12,
+            C:13,
+            D:14,
+            E:3,
+            F:4,
+            G:5,
+            H:6,
+            SER:10,
+        ],
+    ]
+}

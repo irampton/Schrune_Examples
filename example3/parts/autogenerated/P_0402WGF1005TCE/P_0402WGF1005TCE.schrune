@@ -1,0 +1,15 @@
+part P_0402WGF1005TCE {
+    info: {
+        partNumber: "0402WGF1005TCE",
+        manufacture: "UNI-ROYAL(厚声)",
+        footprint: "./P_0402WGF1005TCE.kicad_mod",
+        symbol: "./P_0402WGF1005TCE.kicad_sym",
+        LCSC: "C26082",
+        designatorPrefix: "R",
+    }
+
+    pins: [
+        1:1,
+        2:2,
+    ]
+}

@@ -1,0 +1,15 @@
+part RCT034R7JLF {
+    info: {
+        partNumber: "RCT034R7JLF",
+        manufacture: "HKR(香港电阻)",
+        footprint: "./RCT034R7JLF.kicad_mod",
+        symbol: "./RCT034R7JLF.kicad_sym",
+        LCSC: "C177269",
+        designatorPrefix: "R",
+    }
+
+    pins: [
+        1:1,
+        2:2,
+    ]
+}

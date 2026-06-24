@@ -1,0 +1,15 @@
+part RTT02334JTH {
+    info: {
+        partNumber: "RTT02334JTH",
+        manufacture: "RALEC(旺诠)",
+        footprint: "./RTT02334JTH.kicad_mod",
+        symbol: "./RTT02334JTH.kicad_sym",
+        LCSC: "C11887",
+        designatorPrefix: "R",
+    }
+
+    pins: [
+        1:1,
+        2:2,
+    ]
+}
